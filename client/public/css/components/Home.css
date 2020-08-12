@@ -1,0 +1,13 @@
+/* HOME */
+div.container-light div.home {
+  background-color: whitesmoke; }
+  div.container-light div.home main.main {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    div.container-light div.home main.main p.paragraph {
+      margin-top: 32px; }
+
+div.container-dark div.home {
+  background-color: black;
+  color: #D1D1D1; }

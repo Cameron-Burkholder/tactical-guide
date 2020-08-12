@@ -1,0 +1,1703 @@
+/* STYLE */
+* {
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic Coding";
+  max-width: 100%;
+  overflow-x: hidden;
+  color: #D1D1D1;
+  z-index: 0; }
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: "Krona One"; }
+
+#wrapper {
+  width: 100VW;
+  height: 100VH; }
+
+div.container-dark {
+  background-color: black;
+  color: white; }
+
+div.container-light {
+  background-color: whitesmoke;
+  color: #282828; }
+
+div.container {
+  width: 100%;
+  height: 100%; }
+
+main.main {
+  width: 100%;
+  padding: 16px; }
+
+/* NAVIGATION */
+div.container-light nav.nav {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgba(112, 111, 111, 0.1); }
+  div.container-light nav.nav h3.nav__heading {
+    color: #282828; }
+  div.container-light nav.nav ul.nav__body {
+    list-style-type: none;
+    display: flex;
+    align-items: center; }
+    div.container-light nav.nav ul.nav__body li.nav__item {
+      display: inline;
+      margin: 16px; }
+      div.container-light nav.nav ul.nav__body li.nav__item a.nav__link {
+        text-decoration: none;
+        color: #282828; }
+  div.container-light nav.nav a.nav__button {
+    display: none; }
+
+div.container-dark nav.nav {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border-bottom: 1px solid #1F1F1F; }
+  div.container-dark nav.nav h3.nav__heading {
+    color: #D1D1D1; }
+  div.container-dark nav.nav ul.nav__body {
+    list-style-type: none;
+    display: flex;
+    align-items: center; }
+    div.container-dark nav.nav ul.nav__body li.nav__item {
+      display: inline;
+      margin: 16px; }
+      div.container-dark nav.nav ul.nav__body li.nav__item a.nav__link {
+        text-decoration: none;
+        color: #D1D1D1; }
+  div.container-dark nav.nav a.nav__button {
+    display: none; }
+
+@media screen and (max-width: 700px) {
+  div.container-light nav.nav ul.nav__body, div.container-light nav.nav--inactive ul.nav__body {
+    position: fixed;
+    width: 100VW;
+    height: 100VH;
+    top: 0;
+    lefT: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.1s ease; }
+    div.container-light nav.nav ul.nav__body li.nav__item, div.container-light nav.nav--inactive ul.nav__body li.nav__item {
+      opacity: 0;
+      transition: all 0.5s ease; }
+  div.container-light nav.nav a.nav__button, div.container-light nav.nav--inactive a.nav__button {
+    display: block !important;
+    background-image: url("../media/logo.jpeg");
+    padding: 24px;
+    background-size: cover;
+    z-index: 1; }
+  div.container-light nav.nav--active ul.nav__body {
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: flex-end; }
+    div.container-light nav.nav--active ul.nav__body li.nav__item {
+      opacity: 1;
+      transition: all 0.5s ease; }
+  div.container-dark nav.nav ul.nav__body, div.container-dark nav.nav--inactive ul.nav__body {
+    position: fixed;
+    width: 100VW;
+    height: 100VH;
+    top: 0;
+    lefT: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.1s ease; }
+    div.container-dark nav.nav ul.nav__body li.nav__item, div.container-dark nav.nav--inactive ul.nav__body li.nav__item {
+      opacity: 0;
+      transition: all 0.5s ease; }
+  div.container-dark nav.nav a.nav__button, div.container-dark nav.nav--inactive a.nav__button {
+    display: block !important;
+    background-image: url("../media/logo.jpeg");
+    padding: 24px;
+    background-size: cover;
+    z-index: 1; }
+  div.container-dark nav.nav--active ul.nav__body {
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: flex-end; }
+    div.container-dark nav.nav--active ul.nav__body li.nav__item {
+      opacity: 1;
+      transition: all 0.5s ease; } }
+
+/* HEADER */
+div.container-light header.header {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(112, 111, 111, 0.1);
+  background-color: whitesmoke; }
+
+div.container-dark header.header {
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #1F1F1F;
+  background-color: black; }
+
+/* FOOTER */
+div.container-light footer.footer {
+  background-color: whitesmoke; }
+
+div.container-dark footer.footer {
+  background-color: black; }
+
+footer.footer {
+  padding: 32px; }
+
+/* MAP STRATEGY */
+div.container-light div.map-offense-content.active, div.container-light div.map-defense-content.active {
+  display: block; }
+
+div.container-light div.map-offense-content.inactive, div.container-light div.map-defense-content.inactive {
+  display: none; }
+
+div.container-light h3.map-offense-title:hover, div.container-light h3.map-defense-title:hover {
+  cursor: pointer; }
+
+div.container-light span.caret-up {
+  position: relative; }
+
+div.container-light span.caret-up:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-bottom: 12px solid black;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+div.container-light span.caret-down {
+  position: relative; }
+
+div.container-light span.caret-down:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-top: 12px solid black;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+div.container-dark div.map-offense-content.active, div.container-dark div.map-defense-content.active {
+  display: block; }
+
+div.container-dark div.map-offense-content.inactive, div.container-dark div.map-defense-content.inactive {
+  display: none; }
+
+div.container-dark h3.map-offense-title:hover, div.container-dark h3.map-defense-title:hover {
+  cursor: pointer; }
+
+div.container-dark span.caret-up {
+  position: relative; }
+
+div.container-dark span.caret-up:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-bottom: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+div.container-dark span.caret-down {
+  position: relative; }
+
+div.container-dark span.caret-down:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-top: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+/* MAP EDIT */
+div.container-light * {
+  color: #282828; }
+
+div.container-light div.map-edit button.map-site-return {
+  color: #282828;
+  padding: 8px 32px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  filter: opacity(0.7);
+  font-size: 10pt;
+  margin: 16px 0px;
+  transition: all 0.3s ease; }
+
+div.container-light div.map-edit button.map-site-return:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease; }
+
+div.container-light div.map-edit div.map-site {
+  background-color: white;
+  border-radius: 2px;
+  padding: 32px 64px; }
+  div.container-light div.map-edit div.map-site h2.map-title {
+    text-align: center;
+    color: #282828; }
+  div.container-light div.map-edit div.map-site button.create-new-strat, div.container-light div.map-edit div.map-site button.remove-strat {
+    color: white;
+    padding: 8px 32px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+    filter: opacity(0.8);
+    font-size: 10pt;
+    margin: 16px 0px;
+    transition: all 0.3s ease; }
+  div.container-light div.map-edit div.map-site button.create-new-strat:hover, div.container-light div.map-edit div.map-site button.remove-strat:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+  div.container-light div.map-edit div.map-site div.map-bans-edit {
+    width: 100%;
+    margin: 16px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    border-bottom: 1px solid rgba(111, 110, 110, 0.3);
+    padding: 32px 0px; }
+    div.container-light div.map-edit div.map-site div.map-bans-edit h2.bans-heading {
+      color: #282828;
+      grid-column: span 2; }
+    div.container-light div.map-edit div.map-site div.map-bans-edit div.ban p.ban-label {
+      color: #282828;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-light div.map-edit div.map-site div.map-bans-edit div.ban input.ban-edit {
+      width: 100%;
+      padding: 8px;
+      color: #282828;
+      font-size: 12pt; }
+  div.container-light div.map-edit div.map-site div.map-offense, div.container-light div.map-edit div.map-site div.map-defense {
+    width: 100%;
+    margin: 16px 0px;
+    border-bottom: 1px solid rgba(111, 110, 110, 0.3);
+    padding-bottom: 32px; }
+    div.container-light div.map-edit div.map-site div.map-offense h3.offense-heading, div.container-light div.map-edit div.map-site div.map-offense h3.defense-heading, div.container-light div.map-edit div.map-site div.map-defense h3.offense-heading, div.container-light div.map-edit div.map-site div.map-defense h3.defense-heading {
+      color: #282828;
+      margin: 16px 0px; }
+    div.container-light div.map-edit div.map-site div.map-offense div.offense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-offense div.offense-notes p.defense-notes-label, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes p.defense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes p.defense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes p.defense-notes-label {
+      color: #282828;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-light div.map-edit div.map-site div.map-offense div.offense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-offense div.offense-notes textarea.defense-notes-edit, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes textarea.defense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes textarea.defense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes textarea.defense-notes-edit {
+      width: 100%;
+      min-width: 100%;
+      min-height: 124px;
+      padding: 8px;
+      color: #282828;
+      font-size: 12pt; }
+    div.container-light div.map-edit div.map-site div.map-offense div.operators, div.container-light div.map-edit div.map-site div.map-defense div.operators {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 8px;
+      margin-top: 16px; }
+      div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit h4.operator-edit-heading, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit h4.operator-edit-heading {
+        color: #282828;
+        text-align: center; }
+      div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location {
+        margin: 8px 0px; }
+        div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-location-label {
+          color: #282828;
+          margin-bottom: 4px;
+          font-size: 12pt; }
+        div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-location-edit {
+          width: 100%;
+          padding: 4px;
+          color: #282828;
+          font-size: 12pt; }
+  div.container-light div.map-edit div.map-site button.update-map {
+    display: block;
+    margin: auto;
+    padding: 8px 16px;
+    color: #282828;
+    background-color: white;
+    border: 1px solid #282828;
+    transition: all 0.3s ease; }
+  div.container-light div.map-edit div.map-site button.update-map:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+
+div.container-dark div.map-edit button.map-site-return {
+  color: white;
+  padding: 8px 32px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 2px;
+  filter: opacity(0.7);
+  font-size: 10pt;
+  margin: 16px 0px;
+  transition: all 0.3s ease; }
+
+div.container-dark div.map-edit button.map-site-return:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease; }
+
+div.container-dark div.map-edit div.map-site {
+  background-color: black;
+  border-radius: 2px;
+  padding: 32px 64px; }
+  div.container-dark div.map-edit div.map-site button.create-new-strat, div.container-dark div.map-edit div.map-site button.remove-strat {
+    color: white;
+    padding: 8px 32px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+    filter: opacity(0.8);
+    font-size: 10pt;
+    margin: 16px 0px;
+    transition: all 0.3s ease; }
+  div.container-dark div.map-edit div.map-site button.create-new-strat:hover, div.container-dark div.map-edit div.map-site button.remove-strat:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+  div.container-dark div.map-edit div.map-site h2.map-title {
+    text-align: center;
+    color: #D1D1D1; }
+  div.container-dark div.map-edit div.map-site div.map-bans-edit {
+    width: 100%;
+    margin: 16px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    border-bottom: 1px solid #1F1F1F;
+    padding: 32px 0px; }
+    div.container-dark div.map-edit div.map-site div.map-bans-edit h2.bans-heading {
+      color: white;
+      grid-column: span 2; }
+    div.container-dark div.map-edit div.map-site div.map-bans-edit div.ban p.ban-label {
+      color: white;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-dark div.map-edit div.map-site div.map-bans-edit div.ban input.ban-edit {
+      width: 100%;
+      padding: 8px;
+      color: black;
+      font-size: 12pt; }
+  div.container-dark div.map-edit div.map-site div.map-offense, div.container-dark div.map-edit div.map-site div.map-defense {
+    width: 100%;
+    margin: 16px 0px;
+    border-bottom: 1px solid #1F1F1F;
+    padding-bottom: 32px; }
+    div.container-dark div.map-edit div.map-site div.map-offense h3.offense-heading, div.container-dark div.map-edit div.map-site div.map-offense h3.defense-heading, div.container-dark div.map-edit div.map-site div.map-defense h3.offense-heading, div.container-dark div.map-edit div.map-site div.map-defense h3.defense-heading {
+      color: white;
+      margin: 16px 0px; }
+    div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes p.defense-notes-label, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes p.defense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes p.defense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes p.defense-notes-label {
+      color: white;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes textarea.defense-notes-edit, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes textarea.defense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes textarea.defense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes textarea.defense-notes-edit {
+      width: 100%;
+      min-width: 100%;
+      min-height: 124px;
+      padding: 8px;
+      color: black;
+      font-size: 12pt; }
+    div.container-dark div.map-edit div.map-site div.map-offense div.operators, div.container-dark div.map-edit div.map-site div.map-defense div.operators {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 8px;
+      margin-top: 16px; }
+      div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit h4.operator-edit-heading, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit h4.operator-edit-heading {
+        color: white;
+        text-align: center; }
+      div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location {
+        margin: 8px 0px; }
+        div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-location-label {
+          color: white;
+          margin-bottom: 4px;
+          font-size: 12pt; }
+        div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-location-edit {
+          width: 100%;
+          padding: 4px;
+          color: black;
+          font-size: 12pt; }
+  div.container-dark div.map-edit div.map-site button.update-map {
+    display: block;
+    margin: auto;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 0.3s ease; }
+  div.container-dark div.map-edit div.map-site button.update-map:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+
+@media screen and (max-width: 700px) {
+  div.admin main.main div.map-site {
+    padding: 32px 16px; }
+    div.admin main.main div.map-site div.map-bans-edit {
+      grid-template-columns: repeat(1, 1fr); }
+      div.admin main.main div.map-site div.map-bans-edit h2.bans-heading {
+        grid-column: span 1; }
+    div.admin main.main div.map-site div.map-offense div.offense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-offense div.offense-notes textarea.defense-notes-edit, div.admin main.main div.map-site div.map-offense div.defense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-offense div.defense-notes textarea.defense-notes-edit, div.admin main.main div.map-site div.map-defense div.offense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-defense div.offense-notes textarea.defense-notes-edit, div.admin main.main div.map-site div.map-defense div.defense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-defense div.defense-notes textarea.defense-notes-edit {
+      min-height: 256px; }
+    div.admin main.main div.map-site div.map-offense div.operators, div.admin main.main div.map-site div.map-defense div.operators {
+      grid-template-columns: 1fr; } }
+
+/* SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  transform: scale(0.7); }
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .slider {
+  background-color: #2196F3; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px); }
+
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+/* LOADER */
+div.container-light div.loading {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%); }
+  div.container-light div.loading * {
+    overflow-x: visible; }
+
+div.container-light .lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px; }
+
+div.container-light .lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px; }
+
+div.container-light .lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: black;
+  margin: -4px 0 0 -4px; }
+
+div.container-light .lds-roller div:nth-child(1) {
+  animation-delay: -0.036s; }
+
+div.container-light .lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px; }
+
+div.container-light .lds-roller div:nth-child(2) {
+  animation-delay: -0.072s; }
+
+div.container-light .lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px; }
+
+div.container-light .lds-roller div:nth-child(3) {
+  animation-delay: -0.108s; }
+
+div.container-light .lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px; }
+
+div.container-light .lds-roller div:nth-child(4) {
+  animation-delay: -0.144s; }
+
+div.container-light .lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px; }
+
+div.container-light .lds-roller div:nth-child(5) {
+  animation-delay: -0.18s; }
+
+div.container-light .lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px; }
+
+div.container-light .lds-roller div:nth-child(6) {
+  animation-delay: -0.216s; }
+
+div.container-light .lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px; }
+
+div.container-light .lds-roller div:nth-child(7) {
+  animation-delay: -0.252s; }
+
+div.container-light .lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px; }
+
+div.container-light .lds-roller div:nth-child(8) {
+  animation-delay: -0.288s; }
+
+div.container-light .lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px; }
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+div.container-dark div.loading {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%); }
+  div.container-dark div.loading * {
+    overflow-x: visible; }
+
+div.container-dark .lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px; }
+
+div.container-dark .lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px; }
+
+div.container-dark .lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px; }
+
+div.container-dark .lds-roller div:nth-child(1) {
+  animation-delay: -0.036s; }
+
+div.container-dark .lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px; }
+
+div.container-dark .lds-roller div:nth-child(2) {
+  animation-delay: -0.072s; }
+
+div.container-dark .lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px; }
+
+div.container-dark .lds-roller div:nth-child(3) {
+  animation-delay: -0.108s; }
+
+div.container-dark .lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px; }
+
+div.container-dark .lds-roller div:nth-child(4) {
+  animation-delay: -0.144s; }
+
+div.container-dark .lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px; }
+
+div.container-dark .lds-roller div:nth-child(5) {
+  animation-delay: -0.18s; }
+
+div.container-dark .lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px; }
+
+div.container-dark .lds-roller div:nth-child(6) {
+  animation-delay: -0.216s; }
+
+div.container-dark .lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px; }
+
+div.container-dark .lds-roller div:nth-child(7) {
+  animation-delay: -0.252s; }
+
+div.container-dark .lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px; }
+
+div.container-dark .lds-roller div:nth-child(8) {
+  animation-delay: -0.288s; }
+
+div.container-dark .lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px; }
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/* STRATEGY SELECTOR */
+div.container-light div.strategy-selector {
+  max-width: 164px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px; }
+  div.container-light div.strategy-selector button.strategy-selector-button {
+    height: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    transition: all 0.3s ease; }
+  div.container-light div.strategy-selector button.strategy-selector-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+
+div.container-dark div.strategy-selector {
+  max-width: 164px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px; }
+  div.container-dark div.strategy-selector button.strategy-selector-button {
+    height: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px;
+    transition: all 0.3s ease; }
+  div.container-dark div.strategy-selector button.strategy-selector-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+
+/* HOME */
+div.container-light div.home {
+  background-color: whitesmoke; }
+  div.container-light div.home main.main {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    div.container-light div.home main.main p.paragraph {
+      margin-top: 32px; }
+
+div.container-dark div.home {
+  background-color: black;
+  color: #D1D1D1; }
+
+/* MAPS */
+div.container-light div.maps {
+  background-color: whitesmoke; }
+  div.container-light div.maps main.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px; }
+    div.container-light div.maps main.main div.map-gallery-item {
+      overflow-y: hidden;
+      transition: all 0.5s ease;
+      position: relative; }
+      div.container-light div.maps main.main div.map-gallery-item img.map-image {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.07);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-gallery-item button.map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0); }
+    div.container-light div.maps main.main div.map-gallery-item:hover {
+      transition: all 0.5s ease; }
+      div.container-light div.maps main.main div.map-gallery-item:hover img.map-image {
+        transform: scale(1.1);
+        transition: all 0.5s ease; }
+      div.container-light div.maps main.main div.map-gallery-item:hover button.map-button {
+        cursor: pointer; }
+    div.container-light div.maps main.main div.map-display {
+      grid-column: span 3; }
+      div.container-light div.maps main.main div.map-display button.gallery-button {
+        color: #282828;
+        padding: 8px 32px;
+        background-color: white;
+        border: 1px solid #282828;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display button.gallery-button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map button.map-site-return {
+        color: #282828;
+        padding: 8px 32px;
+        background-color: white;
+        border: 1px solid #282828;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map button.map-site-return:hover {
+        cursor: pointer;
+        background-color: #282828;
+        color: white;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map div.map-heading {
+        display: block;
+        margin: auto;
+        border: 1px solid #282828;
+        padding: 16px; }
+        div.container-light div.maps main.main div.map-display div.map div.map-heading h2.map-title {
+          text-align: center; }
+        div.container-light div.maps main.main div.map-display div.map div.map-heading h3.map-bans {
+          text-align: center; }
+      div.container-light div.maps main.main div.map-display div.map div.map-site-gallery {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px; }
+        div.container-light div.maps main.main div.map-display div.map div.map-site-gallery h3.map-site-gallery-description {
+          margin-bottom: 8px;
+          grid-column: span 4; }
+        div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site {
+          overflow-y: hidden;
+          transition: all 0.5s ease;
+          position: relative; }
+          div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site img.map-site-image {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.07);
+            transition: all 0.3s ease; }
+          div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site button.map-site-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            color: #282828;
+            border: 2px solid #282828;
+            font-size: 12pt;
+            padding: 8px;
+            transition: all 0.3s ease; }
+        div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site:hover button.map-site-button {
+          cursor: pointer;
+          background-color: #282828;
+          color: white;
+          transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#bank div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -25%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#border div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, 30%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#chalet div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, -35%) scale(2.8);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#clubhouse div.map-overview:hover img.map-overview-image {
+        transform: translate(-45%, -15%) scale(3.2);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#coastline div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -32%) scale(3.5);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#consulate div.map-overview:hover img.map-overview-image {
+        transform: translate(-37%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#kafe_dostoyevsky div.map-overview:hover img.map-overview-image {
+        transform: translate(-65%, -25%) scale(4.5);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#kanal div.map-overview:hover img.map-overview-image {
+        transform: translate(-50%, -12%) scale(3.8);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#oregon div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 2%) scale(1.7);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#outback div.map-overview:hover img.map-overview-image {
+        transform: translate(-82%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#theme_park div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 7%) scale(2.2);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#villa div.map-overview:hover img.map-overview-image {
+        transform: translate(-35%, 20%) scale(2.3);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map-site h2.map-title {
+        text-align: center;
+        margin: 32px; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-overview {
+        margin: 16px auto;
+        max-width: 50VW;
+        overflow: hidden; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-overview img.map-overview-image {
+          width: 100%;
+          transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-offense h3.map-offense-title, div.container-light div.maps main.main div.map-display div.map-site div.map-offense h3.map-defense-title, div.container-light div.maps main.main div.map-display div.map-site div.map-defense h3.map-offense-title, div.container-light div.maps main.main div.map-display div.map-site div.map-defense h3.map-defense-title {
+        margin: 16px 0px; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-offense p.map-offense-notes, div.container-light div.maps main.main div.map-display div.map-site div.map-offense p.map-defense-notes, div.container-light div.maps main.main div.map-display div.map-site div.map-defense p.map-offense-notes, div.container-light div.maps main.main div.map-display div.map-site div.map-defense p.map-defense-notes {
+        margin-bottom: 8px; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 16px 0px; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator h4.operator-name, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator h4.operator-name {
+          text-align: center; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator img.operator-image, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator img.operator-image {
+          width: 100%; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-role, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-role {
+          margin: 8px 0px; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-objective, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-objective {
+          margin: 8px 0px; }
+
+div.container-dark div.maps {
+  background-color: black; }
+  div.container-dark div.maps main.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px; }
+    div.container-dark div.maps main.main div.map-gallery-item {
+      overflow-y: hidden;
+      filter: grayscale(1);
+      transition: all 0.5s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item img.map-image {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.07);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item button.map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0); }
+    div.container-dark div.maps main.main div.map-gallery-item:hover {
+      filter: grayscale(0.5);
+      transition: all 0.5s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item:hover img.map-image {
+        transform: scale(1.1);
+        transition: all 0.5s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item:hover button.map-button {
+        cursor: pointer; }
+    div.container-dark div.maps main.main div.map-display {
+      grid-column: span 3; }
+      div.container-dark div.maps main.main div.map-display button.gallery-button {
+        color: white;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        color: #D1D1D1;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display button.gallery-button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map button.map-site-return {
+        color: white;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        color: #D1D1D1;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map button.map-site-return:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map div.map-heading {
+        display: block;
+        margin: auto;
+        border: 1px solid white;
+        padding: 16px; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-heading h2.map-title {
+          text-align: center; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-heading h3.map-bans {
+          text-align: center; }
+      div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery h3.map-site-gallery-description {
+          margin-bottom: 8px;
+          grid-column: span 4; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site {
+          overflow-y: hidden;
+          filter: grayscale(1);
+          transition: all 0.5s ease; }
+          div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site img.map-site-image {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.07);
+            transition: all 0.3s ease; }
+          div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site button.map-site-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 2px solid white;
+            font-size: 12pt;
+            padding: 8px;
+            transition: all 0.3s ease; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site:hover button.map-site-button {
+          cursor: pointer;
+          background-color: black;
+          transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#bank div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -25%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#border div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, 30%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#chalet div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, -35%) scale(2.8);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#clubhouse div.map-overview:hover img.map-overview-image {
+        transform: translate(-45%, -15%) scale(3.2);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#coastline div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -32%) scale(3.5);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#consulate div.map-overview:hover img.map-overview-image {
+        transform: translate(-37%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#kafe_dostoyevsky div.map-overview:hover img.map-overview-image {
+        transform: translate(-65%, -25%) scale(4.5);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#kanal div.map-overview:hover img.map-overview-image {
+        transform: translate(-50%, -12%) scale(3.8);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#oregon div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 2%) scale(1.7);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#outback div.map-overview:hover img.map-overview-image {
+        transform: translate(-82%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#theme_park div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 7%) scale(2.2);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#villa div.map-overview:hover img.map-overview-image {
+        transform: translate(-35%, 20%) scale(2.3);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map-site h2.map-title {
+        text-align: center;
+        margin: 32px; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-overview {
+        margin: 16px auto;
+        max-width: 50VW;
+        overflow: hidden; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-overview img.map-overview-image {
+          width: 100%;
+          transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-offense h3.map-offense-title, div.container-dark div.maps main.main div.map-display div.map-site div.map-offense h3.map-defense-title, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense h3.map-offense-title, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense h3.map-defense-title {
+        margin: 16px 0px; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-offense p.map-offense-notes, div.container-dark div.maps main.main div.map-display div.map-site div.map-offense p.map-defense-notes, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense p.map-offense-notes, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense p.map-defense-notes {
+        margin-bottom: 8px; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 16px 0px; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator h4.operator-name, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator h4.operator-name {
+          text-align: center; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator img.operator-image, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator img.operator-image {
+          width: 100%; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-role, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-role {
+          margin: 8px 0px; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-objective, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-objective {
+          margin: 8px 0px; }
+
+@media screen and (max-width: 700px) {
+  div.maps main.main {
+    grid-template-columns: repeat(2, 1fr) !important; }
+    div.maps main.main div.map-display {
+      grid-columns: span 2; }
+      div.maps main.main div.map-display div.map div.map-site-gallery {
+        grid-template-columns: 1fr !important; }
+        div.maps main.main div.map-display div.map div.map-site-gallery h3.map-site-gallery-description {
+          grid-column: span 1 !important; }
+      div.maps main.main div.map-display div.map div.map-site div.map-overview {
+        max-width: 100%; }
+      div.maps main.main div.map-display div.map div.map-site div.operator-lineup {
+        grid-template-columns: repeat(2, 1fr) !important; } }
+
+/* TEAM */
+div.container-light div.team main.main div.update {
+  padding: 32px 0px; }
+  div.container-light div.team main.main div.update button.force-refresh {
+    color: #282828;
+    padding: 8px 32px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    filter: opacity(0.7);
+    font-size: 10pt;
+    margin: 16px 0px;
+    transition: all 0.3s ease; }
+  div.container-light div.team main.main div.update button.force-refresh:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease; }
+
+div.container-light div.team main.main div.team-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px 8px; }
+  div.container-light div.team main.main div.team-members div.team-member {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.2);
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column; }
+    div.container-light div.team main.main div.team-members div.team-member h3.member-username {
+      text-align: center; }
+    div.container-light div.team main.main div.team-members div.team-member h4.member-name {
+      text-align: center; }
+    div.container-light div.team main.main div.team-members div.team-member div.member-layout {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-gap: 32px; }
+      div.container-light div.team main.main div.team-members div.team-member div.member-layout img.member-img {
+        max-width: 200px;
+        border-radius: 100%;
+        display: block;
+        margin: 32px auto; }
+      div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content {
+        display: flex;
+        flex-direction: column; }
+        div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-stats {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          grid-gap: 8px;
+          margin-top: 16px;
+          background-color: #1a1a1a;
+          padding: 8px; }
+          div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-stats div.stat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 8px 0px; }
+          div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-stats div.label {
+            display: flex;
+            justify-content: center;
+            color: #9a9a9a;
+            padding: 2px 0px;
+            text-align: center; }
+        div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-attack, div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-defend {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          background-color: #1a1a1a;
+          padding: 8px;
+          margin-top: 32px; }
+          div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-attack div.stat, div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-defend div.stat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 8px 0px; }
+          div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-attack div.label, div.container-light div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-defend div.label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9a9a9a;
+            padding: 2px 0px;
+            text-align: center; }
+
+div.container-dark div.team main.main div.update {
+  padding: 32px 0px; }
+  div.container-dark div.team main.main div.update button.force-refresh {
+    color: white;
+    padding: 8px 32px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+    filter: opacity(0.7);
+    font-size: 10pt;
+    margin: 16px 0px;
+    transition: all 0.3s ease; }
+  div.container-dark div.team main.main div.update button.force-refresh:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+
+div.container-dark div.team main.main div.team-members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px 8px; }
+  div.container-dark div.team main.main div.team-members div.team-member {
+    background-color: #1F1F1F;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column; }
+    div.container-dark div.team main.main div.team-members div.team-member h3.member-username {
+      text-align: center; }
+    div.container-dark div.team main.main div.team-members div.team-member h4.member-name {
+      text-align: center; }
+    div.container-dark div.team main.main div.team-members div.team-member div.member-layout {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-gap: 32px; }
+      div.container-dark div.team main.main div.team-members div.team-member div.member-layout img.member-img {
+        max-width: 200px;
+        border-radius: 100%;
+        display: block;
+        margin: 32px auto; }
+      div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content {
+        display: flex;
+        flex-direction: column; }
+        div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-stats {
+          display: grid;
+          grid-template-columns: repeat(8, 1fr);
+          grid-gap: 8px;
+          margin-top: 16px;
+          background-color: #1a1a1a;
+          padding: 8px; }
+          div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-stats div.stat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 8px 0px; }
+          div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-stats div.label {
+            display: flex;
+            justify-content: center;
+            color: #9a9a9a;
+            padding: 2px 0px;
+            text-align: center; }
+        div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-attack, div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-defend {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          background-color: #1a1a1a;
+          padding: 8px;
+          margin-top: 32px; }
+          div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-attack div.stat, div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-defend div.stat {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding: 8px 0px; }
+          div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-attack div.label, div.container-dark div.team main.main div.team-members div.team-member div.member-layout div.member-content div.member-defend div.label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9a9a9a;
+            padding: 2px 0px;
+            text-align: center; }
+
+@media screen and (max-width: 700px) {
+  div.team-members {
+    grid-template-columns: 1fr !important; }
+    div.team-members div.member-layout {
+      grid-template-columns: 1fr !important; }
+      div.team-members div.member-layout div.member-stats {
+        grid-template-columns: repeat(2, 1fr) !important; }
+      div.team-members div.member-layout div.member-attack, div.team-members div.member-layout div.member-defend {
+        grid-template-columns: repeat(2, 1fr) !important; } }
+
+/* OPERATORS */
+div.container-light div.operators main.main div.operator-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 2px; }
+  div.container-light div.operators main.main div.operator-container div.operator-hide {
+    position: relative;
+    overflow: hidden; }
+    div.container-light div.operators main.main div.operator-container div.operator-hide h4.operator-name {
+      position: absolute;
+      bottom: 0px;
+      filter: brightness(0.9);
+      z-index: 1;
+      font-size: 8pt;
+      text-align: center;
+      width: 100%;
+      background-color: #0f1428;
+      padding: 4px; }
+    div.container-light div.operators main.main div.operator-container div.operator-hide img.operator-image {
+      width: 100%;
+      filter: brightness(0.7);
+      z-index: 0;
+      transition: all 0.3s ease; }
+    div.container-light div.operators main.main div.operator-container div.operator-hide p.operator-description {
+      display: none; }
+    div.container-light div.operators main.main div.operator-container div.operator-hide ul.operator-strategies {
+      display: none; }
+    div.container-light div.operators main.main div.operator-container div.operator-hide p.operator-usedby {
+      display: none; }
+  div.container-light div.operators main.main div.operator-container div.operator-hide:hover img.operator-image {
+    filter: brightness(0.9);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    cursor: pointer; }
+  div.container-light div.operators main.main div.operator-container div.operator-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1; }
+    div.container-light div.operators main.main div.operator-container div.operator-display h4.operator-name {
+      text-align: center;
+      margin-top: 200px; }
+    div.container-light div.operators main.main div.operator-container div.operator-display img.operator-image {
+      display: block;
+      margin: auto; }
+    div.container-light div.operators main.main div.operator-container div.operator-display p.operator-description {
+      text-align: center;
+      margin: 32px 0px;
+      font-weight: bold; }
+    div.container-light div.operators main.main div.operator-container div.operator-display ul.operator-strategies {
+      display: block;
+      margin: auto;
+      max-width: 400px; }
+    div.container-light div.operators main.main div.operator-container div.operator-display p.operator-usedby {
+      text-align: center;
+      margin: 32px; }
+
+div.container-dark div.operators main.main div.operator-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 2px; }
+  div.container-dark div.operators main.main div.operator-container div.operator-hide {
+    position: relative;
+    overflow: hidden; }
+    div.container-dark div.operators main.main div.operator-container div.operator-hide h4.operator-name {
+      position: absolute;
+      bottom: 0px;
+      filter: brightness(0.9);
+      z-index: 1;
+      font-size: 8pt;
+      text-align: center;
+      width: 100%;
+      background-color: #0f1428;
+      padding: 4px; }
+    div.container-dark div.operators main.main div.operator-container div.operator-hide img.operator-image {
+      width: 100%;
+      filter: brightness(0.7);
+      z-index: 0;
+      transition: all 0.3s ease; }
+    div.container-dark div.operators main.main div.operator-container div.operator-hide p.operator-description {
+      display: none; }
+    div.container-dark div.operators main.main div.operator-container div.operator-hide ul.operator-strategies {
+      display: none; }
+    div.container-dark div.operators main.main div.operator-container div.operator-hide p.operator-usedby {
+      display: none; }
+  div.container-dark div.operators main.main div.operator-container div.operator-hide:hover img.operator-image {
+    filter: brightness(0.9);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+    cursor: pointer; }
+  div.container-dark div.operators main.main div.operator-container div.operator-display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1; }
+    div.container-dark div.operators main.main div.operator-container div.operator-display h4.operator-name {
+      text-align: center;
+      margin-top: 200px; }
+    div.container-dark div.operators main.main div.operator-container div.operator-display img.operator-image {
+      display: block;
+      margin: auto; }
+    div.container-dark div.operators main.main div.operator-container div.operator-display p.operator-description {
+      text-align: center;
+      margin: 32px 0px;
+      font-weight: bold; }
+    div.container-dark div.operators main.main div.operator-container div.operator-display ul.operator-strategies {
+      display: block;
+      margin: auto;
+      max-width: 400px; }
+    div.container-dark div.operators main.main div.operator-container div.operator-display p.operator-usedby {
+      text-align: center;
+      margin: 32px; }
+
+@media screen and (max-width: 600px) {
+  div.operators main.main {
+    padding: 4px !important; }
+  div.operator-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-gap: 4px !important; }
+    div.operator-container h4.operator-name {
+      margin-top: 100px !important; }
+    div.operator-container img.operator-image {
+      filter: brightness(0.9) !important; }
+    div.operator-container ul.operator-strategies {
+      max-width: 300px !important; } }
+
+/* AUTHENTICATION */
+div.container-light div.home main.main form.authentication-form {
+  padding: 8px;
+  background-color: #2B2B2B;
+  border-radius: 2px;
+  max-width: 400px;
+  margin: 32px auto 0 auto; }
+  div.container-light div.home main.main form.authentication-form fieldset.authentication-field {
+    border: none; }
+    div.container-light div.home main.main form.authentication-form fieldset.authentication-field label.authentication-label {
+      margin-right: 8px; }
+    div.container-light div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input, div.container-light div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:focus, div.container-light div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:active {
+      background-color: transparent;
+      border: none;
+      border-left: 3px solid #295396;
+      animation: blink 0.5s step-end infinite;
+      outline: none;
+      box-shadow: none; }
+
+div.container-light div.home main.main button.authentication-button {
+  display: block;
+  margin: 32px auto;
+  padding: 8px 24px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease; }
+
+div.container-light div.home main.main button.authentication-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease; }
+
+div.container-dark div.home main.main form.authentication-form {
+  padding: 8px;
+  background-color: #2B2B2B;
+  border-radius: 2px;
+  max-width: 400px;
+  margin: 32px auto 0 auto; }
+  div.container-dark div.home main.main form.authentication-form fieldset.authentication-field {
+    border: none; }
+    div.container-dark div.home main.main form.authentication-form fieldset.authentication-field label.authentication-label {
+      margin-right: 8px; }
+    div.container-dark div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input, div.container-dark div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:focus, div.container-dark div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:active {
+      background-color: transparent;
+      border: none;
+      border-left: 3px solid #295396;
+      animation: blink 0.5s step-end infinite;
+      outline: none;
+      box-shadow: none; }
+
+div.container-dark div.home main.main button.authentication-button {
+  display: block;
+  margin: 32px auto;
+  padding: 8px 24px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease; }
+
+div.container-dark div.home main.main button.authentication-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease; }
+
+@keyframes blink {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #295396; } }
+
+/* ADMIN */
+div.container-light div.admin {
+  background-color: whitesmoke; }
+  div.container-light div.admin header.header {
+    border-bottom: 1px solid rgba(112, 111, 111, 0.1); }
+    div.container-light div.admin header.header * {
+      color: #282828; }
+  div.container-light div.admin main.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px; }
+    div.container-light div.admin main.main div.map-gallery-item {
+      overflow-y: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      div.container-light div.admin main.main div.map-gallery-item img.map-image {
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 100%; }
+      div.container-light div.admin main.main div.map-gallery-item button.map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0); }
+    div.container-light div.admin main.main div.map-gallery-item:hover img.map-image {
+      transform: scale(1.1);
+      transition: all 0.5s ease; }
+    div.container-light div.admin main.main div.map-gallery-item:hover button.map-button {
+      cursor: pointer; }
+    div.container-light div.admin main.main div.map-display {
+      grid-column: span 3; }
+      div.container-light div.admin main.main div.map-display button.gallery-button {
+        color: #282828;
+        padding: 8px 32px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-light div.admin main.main div.map-display button.gallery-button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease; }
+      div.container-light div.admin main.main div.map-display div.map-edit div.map-edit-heading {
+        display: block;
+        margin: auto;
+        border: 1px solid rgba(112, 111, 111, 0.1);
+        padding: 16px; }
+        div.container-light div.admin main.main div.map-display div.map-edit div.map-edit-heading h2.map-title {
+          text-align: center;
+          color: #282828; }
+      div.container-light div.admin main.main div.map-display div.map-edit div.map-site-gallery {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+        align-items: center; }
+        div.container-light div.admin main.main div.map-display div.map-edit div.map-site-gallery h3.map-site-gallery-description {
+          margin-bottom: 8px;
+          flex: 0 0 100%;
+          color: #282828;
+          grid-column: span 4; }
+        div.container-light div.admin main.main div.map-display div.map-edit div.map-site-gallery button.map-site-button {
+          display: block;
+          margin: auto;
+          width: 100%;
+          height: 100px;
+          background-color: white;
+          color: #282828;
+          font-size: 12pt;
+          padding: 8px;
+          transition: all 0.3s ease; }
+        div.container-light div.admin main.main div.map-display div.map-edit div.map-site-gallery button.map-site-button:hover {
+          cursor: pointer;
+          background-color: #282828;
+          color: white;
+          transition: all 0.3s ease; }
+      div.container-light div.admin main.main div.map-display div.success, div.container-light div.admin main.main div.map-display div.failure {
+        color: #282828;
+        text-align: center; }
+        div.container-light div.admin main.main div.map-display div.success h2.success-heading, div.container-light div.admin main.main div.map-display div.success p.success-description, div.container-light div.admin main.main div.map-display div.failure h2.success-heading, div.container-light div.admin main.main div.map-display div.failure p.success-description {
+          text-align: center;
+          color: #282828; }
+
+div.container-dark div.admin {
+  background-color: black; }
+  div.container-dark div.admin header.header {
+    border-bottom: 1px solid #1F1F1F; }
+    div.container-dark div.admin header.header * {
+      color: #D1D1D1; }
+  div.container-dark div.admin main.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px; }
+    div.container-dark div.admin main.main div.map-gallery-item {
+      overflow-y: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      div.container-dark div.admin main.main div.map-gallery-item img.map-image {
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 100%; }
+      div.container-dark div.admin main.main div.map-gallery-item button.map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0); }
+    div.container-dark div.admin main.main div.map-gallery-item:hover img.map-image {
+      transform: scale(1.1);
+      transition: all 0.5s ease; }
+    div.container-dark div.admin main.main div.map-gallery-item:hover button.map-button {
+      cursor: pointer; }
+    div.container-dark div.admin main.main div.map-display {
+      grid-column: span 3; }
+      div.container-dark div.admin main.main div.map-display button.gallery-button {
+        color: #D1D1D1;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-dark div.admin main.main div.map-display button.gallery-button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease; }
+      div.container-dark div.admin main.main div.map-display div.map-edit div.map-edit-heading {
+        display: block;
+        margin: auto;
+        border: 1px solid #1F1F1F;
+        padding: 16px; }
+        div.container-dark div.admin main.main div.map-display div.map-edit div.map-edit-heading h2.map-title {
+          text-align: center;
+          color: white; }
+      div.container-dark div.admin main.main div.map-display div.map-edit div.map-site-gallery {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px;
+        align-items: center; }
+        div.container-dark div.admin main.main div.map-display div.map-edit div.map-site-gallery h3.map-site-gallery-description {
+          margin-bottom: 8px;
+          flex: 0 0 100%;
+          color: white;
+          grid-column: span 4; }
+        div.container-dark div.admin main.main div.map-display div.map-edit div.map-site-gallery button.map-site-button {
+          display: block;
+          margin: auto;
+          width: 100%;
+          height: 100px;
+          background-color: black;
+          color: white;
+          font-size: 12pt;
+          padding: 8px;
+          transition: all 0.3s ease; }
+        div.container-dark div.admin main.main div.map-display div.map-edit div.map-site-gallery button.map-site-button:hover {
+          cursor: pointer;
+          background-color: white;
+          color: black;
+          transition: all 0.3s ease; }
+      div.container-dark div.admin main.main div.map-display div.success, div.container-dark div.admin main.main div.map-display div.failure {
+        color: #D1D1D1;
+        text-align: center; }
+        div.container-dark div.admin main.main div.map-display div.success h2.success-heading, div.container-dark div.admin main.main div.map-display div.success p.success-description, div.container-dark div.admin main.main div.map-display div.failure h2.success-heading, div.container-dark div.admin main.main div.map-display div.failure p.success-description {
+          text-align: center;
+          color: #D1D1D1; }
+
+@media screen and (max-width: 700px) {
+  div.admin main.main {
+    grid-template-columns: repeat(2, 1fr) !important; }
+    div.admin main.main div.map-site-gallery {
+      grid-template-columns: repeat(2, 1fr) !important; }
+      div.admin main.main div.map-site-gallery h3.map-site-gallery-description {
+        grid-column: span 2 !important; } }

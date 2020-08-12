@@ -1,0 +1,13 @@
+{
+  "data":
+  [
+    {
+      "name":"Cameron","username":"battlerifle10","rank":"Not ranked yet.","currentMMR":"3,112 MMR","rankedKD":"1.64 Kd","timePlayed":"337h"},
+    {"name":"Alex","username":"FaZe Lucky X","rank":"","currentMMR":"","rankedKD":"","timePlayed":""},
+    {"name":"Everett","username":"XChoubaccaX","rank":"","currentMMR":"","rankedKD":"","timePlayed":""},
+    {"name":"Reese","username":"FaZe PMac X","rank":"","currentMMR":"","rankedKD":"","timePlayed":""},
+    {"name":"Cade","username":"FaZe XA AXii","rank":"","currentMMR":"","rankedKD":"","timePlayed":""},
+    {"name":"Jon","username":"FaZexXxTrash","rank":"","currentMMR":"","rankedKD":"","timePlayed":""},
+    {"name":"Jack","username":"FaZe Windu X","rank":"","currentMMR":"","rankedKD":"","timePlayed":""}
+  ]
+}

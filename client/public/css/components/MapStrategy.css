@@ -1,0 +1,66 @@
+/* MAP STRATEGY */
+div.container-light div.map-offense-content.active, div.container-light div.map-defense-content.active {
+  display: block; }
+
+div.container-light div.map-offense-content.inactive, div.container-light div.map-defense-content.inactive {
+  display: none; }
+
+div.container-light h3.map-offense-title:hover, div.container-light h3.map-defense-title:hover {
+  cursor: pointer; }
+
+div.container-light span.caret-up {
+  position: relative; }
+
+div.container-light span.caret-up:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-bottom: 12px solid black;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+div.container-light span.caret-down {
+  position: relative; }
+
+div.container-light span.caret-down:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-top: 12px solid black;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+div.container-dark div.map-offense-content.active, div.container-dark div.map-defense-content.active {
+  display: block; }
+
+div.container-dark div.map-offense-content.inactive, div.container-dark div.map-defense-content.inactive {
+  display: none; }
+
+div.container-dark h3.map-offense-title:hover, div.container-dark h3.map-defense-title:hover {
+  cursor: pointer; }
+
+div.container-dark span.caret-up {
+  position: relative; }
+
+div.container-dark span.caret-up:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-bottom: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+div.container-dark span.caret-down {
+  position: relative; }
+
+div.container-dark span.caret-down:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-top: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }

@@ -1,0 +1,90 @@
+/* AUTHENTICATION */
+div.container-light {
+  div.home {
+    main.main {
+      form.authentication-form {
+        padding: 8px;
+        background-color: #2B2B2B;
+        border-radius: 2px;
+        max-width: 400px;
+        margin: 32px auto 0 auto;
+        fieldset.authentication-field {
+          border: none;
+          label.authentication-label {
+            margin-right: 8px;
+          }
+          input.authentication-input, input.authentication-input:focus, input.authentication-input:active {
+            background-color: transparent;
+            border: none;
+            border-left: 3px solid #295396;
+            animation: blink 0.5s step-end infinite;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+      button.authentication-button {
+        display: block;
+        margin: 32px auto;
+        padding: 8px 24px;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        transition: all 0.3s ease;
+      }
+      button.authentication-button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+div.container-dark {
+  div.home {
+    main.main {
+      form.authentication-form {
+        padding: 8px;
+        background-color: #2B2B2B;
+        border-radius: 2px;
+        max-width: 400px;
+        margin: 32px auto 0 auto;
+        fieldset.authentication-field {
+          border: none;
+          label.authentication-label {
+            margin-right: 8px;
+          }
+          input.authentication-input, input.authentication-input:focus, input.authentication-input:active {
+            background-color: transparent;
+            border: none;
+            border-left: 3px solid #295396;
+            animation: blink 0.5s step-end infinite;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+      button.authentication-button {
+        display: block;
+        margin: 32px auto;
+        padding: 8px 24px;
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+        transition: all 0.3s ease;
+      }
+      button.authentication-button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #295396 }
+}

@@ -1,0 +1,33 @@
+/* COLLAPSE */
+div.map-offense-content.active, div.map-defense-content.active {
+  display: block; }
+
+div.map-offense-content.inactive, div.map-defense-content.inactive {
+  display: none; }
+
+h3.map-offense-title:hover, h3.map-defense-title:hover {
+  cursor: pointer; }
+
+span.caret-up {
+  position: relative; }
+
+span.caret-up:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-bottom: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }
+
+span.caret-down {
+  position: relative; }
+
+span.caret-down:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  border-top: 12px solid white;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent; }

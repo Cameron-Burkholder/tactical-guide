@@ -1,0 +1,72 @@
+/* AUTHENTICATION */
+div.container-light div.home main.main form.authentication-form {
+  padding: 8px;
+  background-color: #2B2B2B;
+  border-radius: 2px;
+  max-width: 400px;
+  margin: 32px auto 0 auto; }
+  div.container-light div.home main.main form.authentication-form fieldset.authentication-field {
+    border: none; }
+    div.container-light div.home main.main form.authentication-form fieldset.authentication-field label.authentication-label {
+      margin-right: 8px; }
+    div.container-light div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input, div.container-light div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:focus, div.container-light div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:active {
+      background-color: transparent;
+      border: none;
+      border-left: 3px solid #295396;
+      animation: blink 0.5s step-end infinite;
+      outline: none;
+      box-shadow: none; }
+
+div.container-light div.home main.main button.authentication-button {
+  display: block;
+  margin: 32px auto;
+  padding: 8px 24px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: all 0.3s ease; }
+
+div.container-light div.home main.main button.authentication-button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease; }
+
+div.container-dark div.home main.main form.authentication-form {
+  padding: 8px;
+  background-color: #2B2B2B;
+  border-radius: 2px;
+  max-width: 400px;
+  margin: 32px auto 0 auto; }
+  div.container-dark div.home main.main form.authentication-form fieldset.authentication-field {
+    border: none; }
+    div.container-dark div.home main.main form.authentication-form fieldset.authentication-field label.authentication-label {
+      margin-right: 8px; }
+    div.container-dark div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input, div.container-dark div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:focus, div.container-dark div.home main.main form.authentication-form fieldset.authentication-field input.authentication-input:active {
+      background-color: transparent;
+      border: none;
+      border-left: 3px solid #295396;
+      animation: blink 0.5s step-end infinite;
+      outline: none;
+      box-shadow: none; }
+
+div.container-dark div.home main.main button.authentication-button {
+  display: block;
+  margin: 32px auto;
+  padding: 8px 24px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease; }
+
+div.container-dark div.home main.main button.authentication-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease; }
+
+@keyframes blink {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #295396; } }

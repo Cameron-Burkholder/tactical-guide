@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "engines": {
+    "node": "^12.14.1",
+    "npm": "6.14.5"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon -w scraper.js scraper.js",
+    "compile": "cd client & npm run scss & npm run start & cd .. & npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt-nodejs": "0.0.3",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.9",
+    "njwt": "^1.0.0",
+    "nodemon": "^2.0.4",
+    "uuid": "^8.2.0"
+  }
+}

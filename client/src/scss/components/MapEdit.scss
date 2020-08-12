@@ -1,0 +1,309 @@
+/* MAP EDIT */
+div.container-light {
+  * {
+    color: rgb(40, 40, 40);
+  }
+  div.map-edit {
+    button.map-site-return {
+      color: rgb(40, 40, 40);
+      padding: 8px 32px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 2px;
+      filter: opacity(0.7);
+      font-size: 10pt;
+      margin: 16px 0px;
+      transition: all 0.3s ease;
+    }
+    button.map-site-return:hover {
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    div.map-site {
+      background-color: white;
+      border-radius: 2px;
+      padding: 32px 64px;
+      h2.map-title {
+        text-align: center;
+        color: rgb(40, 40, 40);
+      }
+      button.create-new-strat, button.remove-strat {
+        color: white;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 2px;
+        filter: opacity(0.8);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease;
+      }
+      button.create-new-strat:hover, button.remove-strat:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease;
+      }
+      div.map-bans-edit {
+        width: 100%;
+        margin: 16px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+        border-bottom: 1px solid rgba(111, 110, 110, 0.3);
+        padding: 32px 0px;
+        h2.bans-heading {
+          color: rgb(40, 40, 40);
+          grid-column: span 2;
+        }
+        div.ban {
+          p.ban-label {
+            color: rgb(40, 40, 40);
+            margin-bottom: 4px;
+            font-size: 12pt;
+          }
+          input.ban-edit {
+            width: 100%;
+            padding: 8px;
+            color: rgb(40, 40, 40);
+            font-size: 12pt;
+          }
+        }
+      }
+      div.map-offense, div.map-defense {
+        width: 100%;
+        margin: 16px 0px;
+        border-bottom: 1px solid rgba(111, 110, 110, 0.3);
+        padding-bottom: 32px;
+        h3.offense-heading, h3.defense-heading {
+          color: rgb(40, 40, 40);
+          margin: 16px 0px;
+        }
+        div.offense-notes, div.defense-notes {
+          p.offense-notes-label, p.defense-notes-label {
+            color: rgb(40, 40, 40);
+            margin-bottom: 4px;
+            font-size: 12pt;
+          }
+          textarea.offense-notes-edit, textarea.defense-notes-edit {
+            width: 100%;
+            min-width: 100%;
+            min-height: 124px;
+            padding: 8px;
+            color: rgb(40, 40, 40);
+            font-size: 12pt;
+          }
+        }
+        div.operators {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 8px;
+          margin-top: 16px;
+          div.operator-edit {
+            h4.operator-edit-heading {
+              color: rgb(40, 40, 40);
+              text-align: center;
+            }
+            div.operator-name, div.operator-role, div.operator-objective, div.operator-location {
+              margin: 8px 0px;
+              p.operator-name-label, p.operator-role-label, p.operator-objective-label, p.operator-location-label {
+                color: rgb(40, 40, 40);
+                margin-bottom: 4px;
+                font-size: 12pt;
+              }
+              input.operator-name-edit, input.operator-role-edit, input.operator-objective-edit, input.operator-location-edit {
+                width: 100%;
+                padding: 4px;
+                color: rgb(40, 40, 40);
+                font-size: 12pt;
+              }
+            }
+          }
+        }
+      }
+      button.update-map {
+        display: block;
+        margin: auto;
+        padding: 8px 16px;
+        color: rgb(40, 40, 40);
+        background-color: white;
+        border: 1px solid rgb(40, 40, 40);
+        transition: all 0.3s ease;
+      }
+      button.update-map:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}
+div.container-dark {
+  div.map-edit {
+    button.map-site-return {
+      color: white;
+      padding: 8px 32px;
+      background-color: black;
+      border: 1px solid white;
+      border-radius: 2px;
+      filter: opacity(0.7);
+      font-size: 10pt;
+      margin: 16px 0px;
+      transition: all 0.3s ease;
+    }
+    button.map-site-return:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      transition: all 0.3s ease;
+    }
+    div.map-site {
+      background-color: black;
+      border-radius: 2px;
+      padding: 32px 64px;
+      button.create-new-strat, button.remove-strat {
+        color: white;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 2px;
+        filter: opacity(0.8);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease;
+      }
+      button.create-new-strat:hover, button.remove-strat:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease;
+      }
+      h2.map-title {
+        text-align: center;
+        color: #D1D1D1;
+      }
+      div.map-bans-edit {
+        width: 100%;
+        margin: 16px 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 8px;
+        border-bottom: 1px solid #1F1F1F;
+        padding: 32px 0px;
+        h2.bans-heading {
+          color: white;
+          grid-column: span 2;
+        }
+        div.ban {
+          p.ban-label {
+            color: white;
+            margin-bottom: 4px;
+            font-size: 12pt;
+          }
+          input.ban-edit {
+            width: 100%;
+            padding: 8px;
+            color: black;
+            font-size: 12pt;
+          }
+        }
+      }
+      div.map-offense, div.map-defense {
+        width: 100%;
+        margin: 16px 0px;
+        border-bottom: 1px solid #1F1F1F;
+        padding-bottom: 32px;
+        h3.offense-heading, h3.defense-heading {
+          color: white;
+          margin: 16px 0px;
+        }
+        div.offense-notes, div.defense-notes {
+          p.offense-notes-label, p.defense-notes-label {
+            color: white;
+            margin-bottom: 4px;
+            font-size: 12pt;
+          }
+          textarea.offense-notes-edit, textarea.defense-notes-edit {
+            width: 100%;
+            min-width: 100%;
+            min-height: 124px;
+            padding: 8px;
+            color: black;
+            font-size: 12pt;
+          }
+        }
+        div.operators {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-gap: 8px;
+          margin-top: 16px;
+          div.operator-edit {
+            h4.operator-edit-heading {
+              color: white;
+              text-align: center;
+            }
+            div.operator-name, div.operator-role, div.operator-objective, div.operator-location {
+              margin: 8px 0px;
+              p.operator-name-label, p.operator-role-label, p.operator-objective-label, p.operator-location-label {
+                color: white;
+                margin-bottom: 4px;
+                font-size: 12pt;
+              }
+              input.operator-name-edit, input.operator-role-edit, input.operator-objective-edit, input.operator-location-edit {
+                width: 100%;
+                padding: 4px;
+                color: black;
+                font-size: 12pt;
+              }
+            }
+          }
+        }
+      }
+      button.update-map {
+        display: block;
+        margin: auto;
+        padding: 8px 16px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        transition: all 0.3s ease;
+      }
+      button.update-map:hover {
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// MOBILE
+@media screen and (max-width: 700px) {
+  div.admin {
+    main.main {
+      div.map-site {
+        padding: 32px 16px;
+        div.map-bans-edit {
+          grid-template-columns: repeat(1, 1fr);
+          h2.bans-heading {
+            grid-column: span 1;
+          }
+        }
+        div.map-offense, div.map-defense {
+          div.offense-notes, div.defense-notes {
+            textarea.offense-notes-edit, textarea.defense-notes-edit {
+              min-height: 256px;
+            }
+          }
+          div.operators {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+}

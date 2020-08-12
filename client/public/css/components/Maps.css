@@ -1,0 +1,348 @@
+/* MAPS */
+div.container-light div.maps {
+  background-color: whitesmoke; }
+  div.container-light div.maps main.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px; }
+    div.container-light div.maps main.main div.map-gallery-item {
+      overflow-y: hidden;
+      transition: all 0.5s ease;
+      position: relative; }
+      div.container-light div.maps main.main div.map-gallery-item img.map-image {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.07);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-gallery-item button.map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0); }
+    div.container-light div.maps main.main div.map-gallery-item:hover {
+      transition: all 0.5s ease; }
+      div.container-light div.maps main.main div.map-gallery-item:hover img.map-image {
+        transform: scale(1.1);
+        transition: all 0.5s ease; }
+      div.container-light div.maps main.main div.map-gallery-item:hover button.map-button {
+        cursor: pointer; }
+    div.container-light div.maps main.main div.map-display {
+      grid-column: span 3; }
+      div.container-light div.maps main.main div.map-display button.gallery-button {
+        color: #282828;
+        padding: 8px 32px;
+        background-color: white;
+        border: 1px solid #282828;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display button.gallery-button:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map button.map-site-return {
+        color: #282828;
+        padding: 8px 32px;
+        background-color: white;
+        border: 1px solid #282828;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map button.map-site-return:hover {
+        cursor: pointer;
+        background-color: #282828;
+        color: white;
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map div.map-heading {
+        display: block;
+        margin: auto;
+        border: 1px solid #282828;
+        padding: 16px; }
+        div.container-light div.maps main.main div.map-display div.map div.map-heading h2.map-title {
+          text-align: center; }
+        div.container-light div.maps main.main div.map-display div.map div.map-heading h3.map-bans {
+          text-align: center; }
+      div.container-light div.maps main.main div.map-display div.map div.map-site-gallery {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px; }
+        div.container-light div.maps main.main div.map-display div.map div.map-site-gallery h3.map-site-gallery-description {
+          margin-bottom: 8px;
+          grid-column: span 4; }
+        div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site {
+          overflow-y: hidden;
+          transition: all 0.5s ease;
+          position: relative; }
+          div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site img.map-site-image {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.07);
+            transition: all 0.3s ease; }
+          div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site button.map-site-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            color: #282828;
+            border: 2px solid #282828;
+            font-size: 12pt;
+            padding: 8px;
+            transition: all 0.3s ease; }
+        div.container-light div.maps main.main div.map-display div.map div.map-site-gallery div.map-site:hover button.map-site-button {
+          cursor: pointer;
+          background-color: #282828;
+          color: white;
+          transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#bank div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -25%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#border div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, 30%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#chalet div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, -35%) scale(2.8);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#clubhouse div.map-overview:hover img.map-overview-image {
+        transform: translate(-45%, -15%) scale(3.2);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#coastline div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -32%) scale(3.5);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#consulate div.map-overview:hover img.map-overview-image {
+        transform: translate(-37%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#kafe_dostoyevsky div.map-overview:hover img.map-overview-image {
+        transform: translate(-65%, -25%) scale(4.5);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#kanal div.map-overview:hover img.map-overview-image {
+        transform: translate(-50%, -12%) scale(3.8);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#oregon div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 2%) scale(1.7);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#outback div.map-overview:hover img.map-overview-image {
+        transform: translate(-82%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#theme_park div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 7%) scale(2.2);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map#villa div.map-overview:hover img.map-overview-image {
+        transform: translate(-35%, 20%) scale(2.3);
+        transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map-site h2.map-title {
+        text-align: center;
+        margin: 32px; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-overview {
+        margin: 16px auto;
+        max-width: 50VW;
+        overflow: hidden; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-overview img.map-overview-image {
+          width: 100%;
+          transition: all 0.3s ease; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-offense h3.map-offense-title, div.container-light div.maps main.main div.map-display div.map-site div.map-offense h3.map-defense-title, div.container-light div.maps main.main div.map-display div.map-site div.map-defense h3.map-offense-title, div.container-light div.maps main.main div.map-display div.map-site div.map-defense h3.map-defense-title {
+        margin: 16px 0px; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-offense p.map-offense-notes, div.container-light div.maps main.main div.map-display div.map-site div.map-offense p.map-defense-notes, div.container-light div.maps main.main div.map-display div.map-site div.map-defense p.map-offense-notes, div.container-light div.maps main.main div.map-display div.map-site div.map-defense p.map-defense-notes {
+        margin-bottom: 8px; }
+      div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 16px 0px; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator h4.operator-name, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator h4.operator-name {
+          text-align: center; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator img.operator-image, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator img.operator-image {
+          width: 100%; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-role, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-role {
+          margin: 8px 0px; }
+        div.container-light div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-objective, div.container-light div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-objective {
+          margin: 8px 0px; }
+
+div.container-dark div.maps {
+  background-color: black; }
+  div.container-dark div.maps main.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px; }
+    div.container-dark div.maps main.main div.map-gallery-item {
+      overflow-y: hidden;
+      filter: grayscale(1);
+      transition: all 0.5s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item img.map-image {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.07);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item button.map-button {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: opacity(0); }
+    div.container-dark div.maps main.main div.map-gallery-item:hover {
+      filter: grayscale(0.5);
+      transition: all 0.5s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item:hover img.map-image {
+        transform: scale(1.1);
+        transition: all 0.5s ease; }
+      div.container-dark div.maps main.main div.map-gallery-item:hover button.map-button {
+        cursor: pointer; }
+    div.container-dark div.maps main.main div.map-display {
+      grid-column: span 3; }
+      div.container-dark div.maps main.main div.map-display button.gallery-button {
+        color: white;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        color: #D1D1D1;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display button.gallery-button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map button.map-site-return {
+        color: white;
+        padding: 8px 32px;
+        background-color: black;
+        border: 1px solid white;
+        color: #D1D1D1;
+        border-radius: 2px;
+        filter: opacity(0.7);
+        font-size: 10pt;
+        margin: 16px 0px;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map button.map-site-return:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map div.map-heading {
+        display: block;
+        margin: auto;
+        border: 1px solid white;
+        padding: 16px; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-heading h2.map-title {
+          text-align: center; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-heading h3.map-bans {
+          text-align: center; }
+      div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery {
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8px; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery h3.map-site-gallery-description {
+          margin-bottom: 8px;
+          grid-column: span 4; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site {
+          overflow-y: hidden;
+          filter: grayscale(1);
+          transition: all 0.5s ease; }
+          div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site img.map-site-image {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.07);
+            transition: all 0.3s ease; }
+          div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site button.map-site-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: 2px solid white;
+            font-size: 12pt;
+            padding: 8px;
+            transition: all 0.3s ease; }
+        div.container-dark div.maps main.main div.map-display div.map div.map-site-gallery div.map-site:hover button.map-site-button {
+          cursor: pointer;
+          background-color: black;
+          transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#bank div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -25%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#border div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, 30%) scale(3);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#chalet div.map-overview:hover img.map-overview-image {
+        transform: translate(-30%, -35%) scale(2.8);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#clubhouse div.map-overview:hover img.map-overview-image {
+        transform: translate(-45%, -15%) scale(3.2);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#coastline div.map-overview:hover img.map-overview-image {
+        transform: translate(-40%, -32%) scale(3.5);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#consulate div.map-overview:hover img.map-overview-image {
+        transform: translate(-37%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#kafe_dostoyevsky div.map-overview:hover img.map-overview-image {
+        transform: translate(-65%, -25%) scale(4.5);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#kanal div.map-overview:hover img.map-overview-image {
+        transform: translate(-50%, -12%) scale(3.8);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#oregon div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 2%) scale(1.7);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#outback div.map-overview:hover img.map-overview-image {
+        transform: translate(-82%, -28%) scale(3.7);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#theme_park div.map-overview:hover img.map-overview-image {
+        transform: translate(5%, 7%) scale(2.2);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map#villa div.map-overview:hover img.map-overview-image {
+        transform: translate(-35%, 20%) scale(2.3);
+        transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map-site h2.map-title {
+        text-align: center;
+        margin: 32px; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-overview {
+        margin: 16px auto;
+        max-width: 50VW;
+        overflow: hidden; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-overview img.map-overview-image {
+          width: 100%;
+          transition: all 0.3s ease; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-offense h3.map-offense-title, div.container-dark div.maps main.main div.map-display div.map-site div.map-offense h3.map-defense-title, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense h3.map-offense-title, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense h3.map-defense-title {
+        margin: 16px 0px; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-offense p.map-offense-notes, div.container-dark div.maps main.main div.map-display div.map-site div.map-offense p.map-defense-notes, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense p.map-offense-notes, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense p.map-defense-notes {
+        margin-bottom: 8px; }
+      div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin: 16px 0px; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator h4.operator-name, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator h4.operator-name {
+          text-align: center; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator img.operator-image, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator img.operator-image {
+          width: 100%; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-role, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-role {
+          margin: 8px 0px; }
+        div.container-dark div.maps main.main div.map-display div.map-site div.map-offense div.operator-lineup div.operator p.operator-objective, div.container-dark div.maps main.main div.map-display div.map-site div.map-defense div.operator-lineup div.operator p.operator-objective {
+          margin: 8px 0px; }
+
+@media screen and (max-width: 700px) {
+  div.maps main.main {
+    grid-template-columns: repeat(2, 1fr) !important; }
+    div.maps main.main div.map-display {
+      grid-columns: span 2; }
+      div.maps main.main div.map-display div.map div.map-site-gallery {
+        grid-template-columns: 1fr !important; }
+        div.maps main.main div.map-display div.map div.map-site-gallery h3.map-site-gallery-description {
+          grid-column: span 1 !important; }
+      div.maps main.main div.map-display div.map div.map-site div.map-overview {
+        max-width: 100%; }
+      div.maps main.main div.map-display div.map div.map-site div.operator-lineup {
+        grid-template-columns: repeat(2, 1fr) !important; } }

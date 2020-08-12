@@ -1,0 +1,183 @@
+/* OPERATORS */
+div.container-light {
+  div.operators {
+    main.main {
+      div.operator-container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 2px;
+        div.operator-hide {
+          position: relative;
+          overflow: hidden;
+          h4.operator-name {
+            position: absolute;
+            bottom: 0px;
+            filter: brightness(0.9);
+            z-index: 1;
+            font-size: 8pt;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(15, 20, 40);
+            padding: 4px;
+          }
+          img.operator-image {
+            width: 100%;
+            filter: brightness(0.7);
+            z-index: 0;
+            transition: all 0.3s ease;
+          }
+          p.operator-description {
+            display: none;
+          }
+          ul.operator-strategies {
+            display: none;
+          }
+          p.operator-usedby {
+            display: none;
+          }
+        }
+        div.operator-hide:hover {
+          img.operator-image {
+            filter: brightness(0.9);
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+          }
+        }
+        div.operator-display {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.9);
+          z-index: 1;
+          h4.operator-name {
+            text-align: center;
+            margin-top: 200px;
+          }
+          img.operator-image {
+            display: block;
+            margin: auto;
+          }
+          p.operator-description {
+            text-align: center;
+            margin: 32px 0px;
+            font-weight: bold
+          }
+          ul.operator-strategies {
+            display: block;
+            margin: auto;
+            max-width: 400px
+          }
+          p.operator-usedby {
+            text-align: center;
+            margin: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+div.container-dark {
+  div.operators {
+    main.main {
+      div.operator-container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 2px;
+        div.operator-hide {
+          position: relative;
+          overflow: hidden;
+          h4.operator-name {
+            position: absolute;
+            bottom: 0px;
+            filter: brightness(0.9);
+            z-index: 1;
+            font-size: 8pt;
+            text-align: center;
+            width: 100%;
+            background-color: rgb(15, 20, 40);
+            padding: 4px;
+          }
+          img.operator-image {
+            width: 100%;
+            filter: brightness(0.7);
+            z-index: 0;
+            transition: all 0.3s ease;
+          }
+          p.operator-description {
+            display: none;
+          }
+          ul.operator-strategies {
+            display: none;
+          }
+          p.operator-usedby {
+            display: none;
+          }
+        }
+        div.operator-hide:hover {
+          img.operator-image {
+            filter: brightness(0.9);
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+          }
+        }
+        div.operator-display {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.9);
+          z-index: 1;
+          h4.operator-name {
+            text-align: center;
+            margin-top: 200px;
+          }
+          img.operator-image {
+            display: block;
+            margin: auto;
+          }
+          p.operator-description {
+            text-align: center;
+            margin: 32px 0px;
+            font-weight: bold
+          }
+          ul.operator-strategies {
+            display: block;
+            margin: auto;
+            max-width: 400px
+          }
+          p.operator-usedby {
+            text-align: center;
+            margin: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOBILE
+@media screen and (max-width: 600px) {
+  div.operators {
+    main.main {
+      padding: 4px !important;
+    }
+  }
+  div.operator-container {
+    grid-template-columns: repeat(4, 1fr) !important;
+    grid-gap: 4px !important;
+    h4.operator-name {
+      margin-top: 100px !important;
+    }
+    img.operator-image {
+      filter: brightness(0.9) !important;
+    }
+    ul.operator-strategies {
+      max-width: 300px !important;
+    }
+  }
+}

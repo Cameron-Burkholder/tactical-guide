@@ -1,0 +1,237 @@
+/* MAP EDIT */
+div.container-light * {
+  color: #282828; }
+
+div.container-light div.map-edit button.map-site-return {
+  color: #282828;
+  padding: 8px 32px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  filter: opacity(0.7);
+  font-size: 10pt;
+  margin: 16px 0px;
+  transition: all 0.3s ease; }
+
+div.container-light div.map-edit button.map-site-return:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease; }
+
+div.container-light div.map-edit div.map-site {
+  background-color: white;
+  border-radius: 2px;
+  padding: 32px 64px; }
+  div.container-light div.map-edit div.map-site h2.map-title {
+    text-align: center;
+    color: #282828; }
+  div.container-light div.map-edit div.map-site button.create-new-strat, div.container-light div.map-edit div.map-site button.remove-strat {
+    color: white;
+    padding: 8px 32px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+    filter: opacity(0.8);
+    font-size: 10pt;
+    margin: 16px 0px;
+    transition: all 0.3s ease; }
+  div.container-light div.map-edit div.map-site button.create-new-strat:hover, div.container-light div.map-edit div.map-site button.remove-strat:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+  div.container-light div.map-edit div.map-site div.map-bans-edit {
+    width: 100%;
+    margin: 16px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    border-bottom: 1px solid rgba(111, 110, 110, 0.3);
+    padding: 32px 0px; }
+    div.container-light div.map-edit div.map-site div.map-bans-edit h2.bans-heading {
+      color: #282828;
+      grid-column: span 2; }
+    div.container-light div.map-edit div.map-site div.map-bans-edit div.ban p.ban-label {
+      color: #282828;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-light div.map-edit div.map-site div.map-bans-edit div.ban input.ban-edit {
+      width: 100%;
+      padding: 8px;
+      color: #282828;
+      font-size: 12pt; }
+  div.container-light div.map-edit div.map-site div.map-offense, div.container-light div.map-edit div.map-site div.map-defense {
+    width: 100%;
+    margin: 16px 0px;
+    border-bottom: 1px solid rgba(111, 110, 110, 0.3);
+    padding-bottom: 32px; }
+    div.container-light div.map-edit div.map-site div.map-offense h3.offense-heading, div.container-light div.map-edit div.map-site div.map-offense h3.defense-heading, div.container-light div.map-edit div.map-site div.map-defense h3.offense-heading, div.container-light div.map-edit div.map-site div.map-defense h3.defense-heading {
+      color: #282828;
+      margin: 16px 0px; }
+    div.container-light div.map-edit div.map-site div.map-offense div.offense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-offense div.offense-notes p.defense-notes-label, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes p.defense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes p.defense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes p.offense-notes-label, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes p.defense-notes-label {
+      color: #282828;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-light div.map-edit div.map-site div.map-offense div.offense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-offense div.offense-notes textarea.defense-notes-edit, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-offense div.defense-notes textarea.defense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.offense-notes textarea.defense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes textarea.offense-notes-edit, div.container-light div.map-edit div.map-site div.map-defense div.defense-notes textarea.defense-notes-edit {
+      width: 100%;
+      min-width: 100%;
+      min-height: 124px;
+      padding: 8px;
+      color: #282828;
+      font-size: 12pt; }
+    div.container-light div.map-edit div.map-site div.map-offense div.operators, div.container-light div.map-edit div.map-site div.map-defense div.operators {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 8px;
+      margin-top: 16px; }
+      div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit h4.operator-edit-heading, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit h4.operator-edit-heading {
+        color: #282828;
+        text-align: center; }
+      div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location {
+        margin: 8px 0px; }
+        div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-location-label {
+          color: #282828;
+          margin-bottom: 4px;
+          font-size: 12pt; }
+        div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-light div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-location-edit {
+          width: 100%;
+          padding: 4px;
+          color: #282828;
+          font-size: 12pt; }
+  div.container-light div.map-edit div.map-site button.update-map {
+    display: block;
+    margin: auto;
+    padding: 8px 16px;
+    color: #282828;
+    background-color: white;
+    border: 1px solid #282828;
+    transition: all 0.3s ease; }
+  div.container-light div.map-edit div.map-site button.update-map:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+
+div.container-dark div.map-edit button.map-site-return {
+  color: white;
+  padding: 8px 32px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 2px;
+  filter: opacity(0.7);
+  font-size: 10pt;
+  margin: 16px 0px;
+  transition: all 0.3s ease; }
+
+div.container-dark div.map-edit button.map-site-return:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease; }
+
+div.container-dark div.map-edit div.map-site {
+  background-color: black;
+  border-radius: 2px;
+  padding: 32px 64px; }
+  div.container-dark div.map-edit div.map-site button.create-new-strat, div.container-dark div.map-edit div.map-site button.remove-strat {
+    color: white;
+    padding: 8px 32px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
+    filter: opacity(0.8);
+    font-size: 10pt;
+    margin: 16px 0px;
+    transition: all 0.3s ease; }
+  div.container-dark div.map-edit div.map-site button.create-new-strat:hover, div.container-dark div.map-edit div.map-site button.remove-strat:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease; }
+  div.container-dark div.map-edit div.map-site h2.map-title {
+    text-align: center;
+    color: #D1D1D1; }
+  div.container-dark div.map-edit div.map-site div.map-bans-edit {
+    width: 100%;
+    margin: 16px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    border-bottom: 1px solid #1F1F1F;
+    padding: 32px 0px; }
+    div.container-dark div.map-edit div.map-site div.map-bans-edit h2.bans-heading {
+      color: white;
+      grid-column: span 2; }
+    div.container-dark div.map-edit div.map-site div.map-bans-edit div.ban p.ban-label {
+      color: white;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-dark div.map-edit div.map-site div.map-bans-edit div.ban input.ban-edit {
+      width: 100%;
+      padding: 8px;
+      color: black;
+      font-size: 12pt; }
+  div.container-dark div.map-edit div.map-site div.map-offense, div.container-dark div.map-edit div.map-site div.map-defense {
+    width: 100%;
+    margin: 16px 0px;
+    border-bottom: 1px solid #1F1F1F;
+    padding-bottom: 32px; }
+    div.container-dark div.map-edit div.map-site div.map-offense h3.offense-heading, div.container-dark div.map-edit div.map-site div.map-offense h3.defense-heading, div.container-dark div.map-edit div.map-site div.map-defense h3.offense-heading, div.container-dark div.map-edit div.map-site div.map-defense h3.defense-heading {
+      color: white;
+      margin: 16px 0px; }
+    div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes p.defense-notes-label, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes p.defense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes p.defense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes p.offense-notes-label, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes p.defense-notes-label {
+      color: white;
+      margin-bottom: 4px;
+      font-size: 12pt; }
+    div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-offense div.offense-notes textarea.defense-notes-edit, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-offense div.defense-notes textarea.defense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.offense-notes textarea.defense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes textarea.offense-notes-edit, div.container-dark div.map-edit div.map-site div.map-defense div.defense-notes textarea.defense-notes-edit {
+      width: 100%;
+      min-width: 100%;
+      min-height: 124px;
+      padding: 8px;
+      color: black;
+      font-size: 12pt; }
+    div.container-dark div.map-edit div.map-site div.map-offense div.operators, div.container-dark div.map-edit div.map-site div.map-defense div.operators {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 8px;
+      margin-top: 16px; }
+      div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit h4.operator-edit-heading, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit h4.operator-edit-heading {
+        color: white;
+        text-align: center; }
+      div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location {
+        margin: 8px 0px; }
+        div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective p.operator-location-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-name-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-role-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-objective-label, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location p.operator-location-label {
+          color: white;
+          margin-bottom: 4px;
+          font-size: 12pt; }
+        div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-offense div.operators div.operator-edit div.operator-location input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-name input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-role input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-objective input.operator-location-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-name-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-role-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-objective-edit, div.container-dark div.map-edit div.map-site div.map-defense div.operators div.operator-edit div.operator-location input.operator-location-edit {
+          width: 100%;
+          padding: 4px;
+          color: black;
+          font-size: 12pt; }
+  div.container-dark div.map-edit div.map-site button.update-map {
+    display: block;
+    margin: auto;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 0.3s ease; }
+  div.container-dark div.map-edit div.map-site button.update-map:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+
+@media screen and (max-width: 700px) {
+  div.admin main.main div.map-site {
+    padding: 32px 16px; }
+    div.admin main.main div.map-site div.map-bans-edit {
+      grid-template-columns: repeat(1, 1fr); }
+      div.admin main.main div.map-site div.map-bans-edit h2.bans-heading {
+        grid-column: span 1; }
+    div.admin main.main div.map-site div.map-offense div.offense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-offense div.offense-notes textarea.defense-notes-edit, div.admin main.main div.map-site div.map-offense div.defense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-offense div.defense-notes textarea.defense-notes-edit, div.admin main.main div.map-site div.map-defense div.offense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-defense div.offense-notes textarea.defense-notes-edit, div.admin main.main div.map-site div.map-defense div.defense-notes textarea.offense-notes-edit, div.admin main.main div.map-site div.map-defense div.defense-notes textarea.defense-notes-edit {
+      min-height: 256px; }
+    div.admin main.main div.map-site div.map-offense div.operators, div.admin main.main div.map-site div.map-defense div.operators {
+      grid-template-columns: 1fr; } }
